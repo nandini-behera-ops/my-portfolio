@@ -3,6 +3,11 @@ const navbar=document.getElementById("navbar");
 menuIcon.addEventListener("click",()=>{
   navbar.classList.toggle("active");
 });
+document.querySelectorAll(".navbar a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    navbar.classList.remove("active");
+  })
+})
 const observer=new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
