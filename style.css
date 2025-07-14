@@ -251,54 +251,68 @@ header{
 /* MEDIA QUERY */
 @media (max-width:768px){
   header{
-    padding: 20px 30px;
-  }
-  .navbar{
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #0f172a;
+    padding: 15px 20px;
     flex-direction: column;
-    width: 100%;
-    display: none; 
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  .navbar.active{
-    display: flex;
+    align-items: flex-start;
   }
   .menu-icon{
     display: block;
   }
+  .navbar{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #0f172a;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navbar a{
+    margin: 10px 0;
+    font-size: 16px;
+  }
   .hero{
     flex-direction: column-reverse;
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
+    height: auto;
   }
   .hero-img img{
+    width: 180px;
+    height: 180px;
     margin-bottom: 20px;
   }
-  /* EDUCATION SECTION */
-  .education{
-    padding: 60px 20px;
+  .hero-content h1{
+    font-size: 32px;
+  }
+  .hero-content h3{
+    font-size: 20px;
+  }
+  .education,
+  .skills,
+  .contact{
+    padding: 40px 20px;
+    height: auto;
   }
   .section-title{
     font-size: 28px;
-    margin-bottom: 30px;
   }
   .edu-card{
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .edu-card h3{
     font-size: 18px;
   }
   .edu-card p{
-    font-size: 13px;
+    font-size: 18px;
   }
-  /* FOOTER PART */
+  .contact-form{
+    width: 100%;
+    padding: 0 10px;
+  }
   .footer{
-    padding: 20px 15px;
+    padding: 15px 10px;
     font-size: 13px;
   }
 }
@@ -374,3 +388,4 @@ header{
   animation: fadeInUp 0.8s ease forwards;
   /* animation-play-state: paused; */
 }
+
