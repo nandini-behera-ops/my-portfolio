@@ -269,7 +269,7 @@ header {
     padding-bottom: 20px;
     z-index: 100;
   }
-  .navbar .active{
+  .navbar.active{
     display: flex;
   }
   .navbar a {
